@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* ----- Navigation Bar ----- */
+body {
+    font-family: "Inter", sans-serif;
+}
+.navbar-collapse>div>a{
+    color: black;
+    font-weight: 300;
+}
+.navbar-collapse>div>a:hover{
+    color: #F0772C;
+}
+#mainNavlink {
+    color: #F0772C;
+    font-weight: 600;
+}
+#mainNavlink:hover {
+    color: black;
+}
+
+/* ----- Hero Section ----- */
+#hero-section{
+    height: 100vh;
+    padding-top: 92px;
+}
+
+#hero-section img{
+    transform: scale(1.0);
+}
+
+.cta-button {
+    background-color: #F0772C;
+    border: none;
+    letter-spacing: .1rem;
+}
+
+#hero-section .cta-button{
+  font-size: 1.1rem;
+  color: #FFF;
+}
+
+.cta-button:hover{
+  background-color: #c84f04;
+}
+
+#hero-section h1{
+    color: #F0772C;
+    font-size: 2.3rem;
+}
+
+#hero-section h2{
+    font-size: 1.2rem;
+}
+
+.check-list svg {
+    color: #F0772C;
+    margin-right: 1rem;
+}
+
+.check-list li span{
+    font-size: 1rem;
+}
+
+.check-list {
+    list-style: none;
+}
+
+/* ----- Solution Section ----- */
+#solution-section{
+    background-color: rgb(242, 242, 242);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#solution-section h3{
+    font-size: 2rem;
+}
+
+#solution-section p{
+    font-size: 1.25rem;
+}
+
+
+/* ----- Room Slideshow ----- */
+#room-slideshow {
+    padding: 5.5rem 0;
+}
+
+.card__container {
+  padding-block: 5rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__article {
+  width: 300px; /* Remove after adding swiper js */
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  margin-bottom: -1.3rem;
+}
+
+.card__image img{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.card__data {
+  background-color: rgb(245, 245, 245);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: var(--first-color-alt);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+}
+
+.card__name {
+  font-size: 1.3rem;
+  color: #F0772C;
+  margin-bottom: .75rem;
+  font-weight: 600;
+}
+
+.card__description {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.card__button {
+  display: inline-block;
+  background-color: #F0772C;
+  padding: .75rem 1.5rem;
+  border-radius: 40px;
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in;
+}
+
+.card__button:hover{
+  background-color: #c84f04;
+}
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: var(--second-color);
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  color: #F0772C !important;
+}
+
+.swiper-button-next {
+  right: 0;
+  color: #F0772C !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
+}
+
+.card__price{
+  font-size: 2rem;
+}
+
+.card__description li{
+  font-family: "Inter", sans-serif; 
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: .3rem;
+}
+
+span.card__description{
+  display: block;
+  color: #6f6f6f;
+  margin-top: -14px;
+  font-style: italic;
+}
+
+.card__container{
+  padding-bottom: 2.5rem !important;
+  font-weight: 900;
+}
+
+/* ----- Testimonials Section ----- */
+#testimonials-section{
+  background-color: rgb(242, 242, 242);
+  padding: 5rem 0;
+}
+
+#testimonials-section h4{
+  margin-bottom: 4rem;
+}
+
+#testimonials-section h4 .stars{
+  color: #FFD700;
+  font-size: 1.5rem;
+}
+
+#testimonials-section h4:nth-of-type(2){
+  color: #6c757d;
+  margin: 5rem 0;
+}
+
+#testimonials-section h4:nth-of-type(2) img{
+  width: 10%;
+  transition: .5s;
+}
+
+#testimonials-section h4:nth-of-type(2) img:hover{
+  transform: translateY(-.2rem);
+}
+
+
+/* ---- Features Section ----- */
+
+#features-section .check-list li{
+  margin-bottom: 1rem;
+}
+
+/* ---- FAQs Section ----- */
+#faqs-section{
+  background-color: rgb(242, 242, 242);
+  padding: 5rem 0;
+}
+
+/* ---- CTA Section ----- */
+#cta-section .cta-button{
+  font-size: 2rem;
+}
+
+#cta-section .cta-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-container img{
+  width: 40px;
+  height: 40px;
+  transition: .3s;
+}
+
+.logo-container img:hover {
+  transform: translateY(-.3rem);
+}
+
+/* ---- Footer Section ----- */
+footer {
+  background-color: #000;
+  padding: 5rem 0 3rem 0;
+}
+
+footer img{
+  width: 122px;
+  height: 78px;
+}
+
+footer p{
+  color: #bdbdbd;
+}
+/* For extra small devices */
+@media screen and (min-width: 0px) {
+    .main-logo{
+        width: 140px;   
+    }
+}
+/* For small devices */
+@media screen and (min-width: 576px) {
+    .main-logo {
+        width: 175px;
+        height: auto;
+    }
+}
+/* For medium devices */
+@media screen and (min-width: 768px) {
+
+}
+/* For large devices */
+@media screen and (min-width: 992px) {
+
+}
+/* For extra large devices */
+@media screen and (min-width: 1200px) {
+    #hero-section h1{
+        font-size: 3rem;
+    }
+    #hero-section h2{
+        font-size: 1.6rem;
+    }
+    #hero-section .cta-button {
+        font-size: 1.6rem;
+    }
+
+    .check-list li span{
+        font-size: 1.25rem;
+    }
+    
+    #hero-section img{
+        transform: scale(0.9);
+    }
+
+    #solution-section h3{
+        font-size: 2.4rem;
+    }
+    #solution-section p{
+        font-size: 1.6rem;
+    }
+}
+/* For extra extra large devices */
+@media screen and (min-width: 1400px) {
+
+}

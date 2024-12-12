@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Donkey Sunrise - Adventure Hub</title>
+        
+        <!-- REMIXICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+        <!-- Bootstrap v5.3.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/cssboot.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl bg-body-tertiary p-0 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img width="175" height="82" class="img-fluid main-logo" src="https://static.wixstatic.com/media/3cf8f7_989d0057e1dd4ad1b8a8af035bd90107~mv2.png/v1/fill/w_350,h_164,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Donkey_Sunrise_Logo_Final-Full_color_whitoutbackground.png" alt="Donkey Sunrise logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarText">
+                    <div class="navbar-nav lead fs-4 fw-normal"><a class="nav-link" href="#room-slideshow">ROOMS</a></div>
+                    <div class="navbar-nav lead fs-4 fw-normal"><a class="nav-link" href="#benefits-section">BENEFITS</a></div>
+                    <div class="navbar-nav lead fs-4 fw-normal"><a class="nav-link" href="#testimonials-section">REVIEWS</a></div>
+                    <div class="navbar-nav lead fs-4 fw-normal"><a class="nav-link" href="#features-section">FEATURES</a></div>
+                    <div class="navbar-nav lead fs-4 fw-normal"><a class="nav-link" href="#faqs-section">FAQs</a></div>
+                    <div class="navbar-nav lead fs-4 fw-medium"><a class="nav-link" id="mainNavlink" href="#cta-section">BOOK A ROOM</a></div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero-section" class="container-fluid px-5 overflow-hidden d-flex align-items-center">
+            <div class="row align-items-center">
+                <div class="col-6 align-self-start">
+                    <h1 class="fw-bold mb-5">More Than a Hotel: <br>
+                        Ride, Relax and Connect with Colombia
+                    </h1>
+                    <h2 class="lead mb-5 lh-base">Private rooms, guided motorcycle tours,
+                        home-cooked meals and a community
+                    </h2>
+                    <button href="#cta-section" type="button" class="btn btn-primary rounded-pill fw-bold px-4 py-3 d-block mx-auto cta-button nav-link">BOOK A ROOM</button>
+                    <ul class="mb-0 mt-5 px-0 check-list">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead">Discover the real Colombia</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead">Join thrilling adventures</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead">Feel welcomed to our community</span></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid rounded-5 shadow" src="assets/img/hero-image.png" alt="An illustration of a ginger man smiling at a camera. He is wearing motorcycle protection. There is a blurred background of a forest.">
+                </div>
+            </div>
+        </section>
+        <section id="solution-section" class="container-fluid px-5">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-5 col-xl-4">
+                    <img class="img-fluid rounded-5 shadow" src="assets/img/solution-image.avif" alt="An illustration of a man relaxing in a hammock hanging in the balcony of his room while looking out into the forest. He is holding a kindle.">
+                </div>
+                <div class="col-6 col-xl-7 align-self-start">
+                    <h3 class="fw-bold mb-5">Looking for a basecamp for your next adventure?</h3>
+                    <p class="lead">Whether you're a motorcycle enthusiast or a traveler seeking a unique escape, we're here to fuel your journey. </p>
+                </div>
+            </div>
+        </section>
+        <section id="room-slideshow" class="container-fluid">
+            <div class="card__container swiper row justify-content-center">
+                <div class="col-xxl-10">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/room-1.avif" alt="An illustration of a room with a bunk bed and a single bed. It is a well-lit space thanks to the light coming in from a window." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">ROOM 1</h3>
+                                <ul class="card__description">
+                                    <li>Single beds</li>
+                                    <li>Sleeps 2</li>
+                                    <li>Shared bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">100.000 COP</h3>
+                                <span class="card__description">22.55 USD</span>
+
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+                
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/room-2.avif" alt="An illustration of a beautiful and clean room with a king size bed. Through the window you can see palm trees on a sunny day." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">ROOM 2</h3>
+                                <ul class="card__description">
+                                    <li>Private Room</li>
+                                    <li>Bed Size 140 x 190</li>
+                                    <li>Shared bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">100.000 COP</h3>
+                                <span class="card__description">22.55 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+                
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/room-3.avif" alt="An illustration of a room with two single beds. There is a drawing painted on the wall of mountains and a river running through them." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">ROOM 3</h3>
+                                <ul class="card__description">
+                                    <li>Private twin room</li>
+                                    <li>Sleeps 2</li>
+                                    <li>Private bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">150.000 COP</h3>
+                                <span class="card__description">33.82 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+                
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/room-5.avif" alt="An illustration of a room with a queen size bed. On the wall there is a drawing of a colourful parrot on a jungle." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">ROOM 5</h3>
+                                <ul class="card__description">
+                                    <li>Private room</li>
+                                    <li>Queen size bed</li>
+                                    <li>Private bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">150.000 COP</h3>
+                                <span class="card__description">33.82 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+        
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/room-6.avif" alt="An illustration of a room with a queen size bed." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">ROOM 6</h3>
+                                <ul class="card__description">
+                                    <li>Queen size bed</li>
+                                    <li>Sleeps 2</li>
+                                    <li>Private bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">120.000 COP</h3>
+                                <span class="card__description">27.06 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/room-8.avif" alt="An illustration of a room with a single size bed." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">ROOM 8</h3>
+                                <ul class="card__description">
+                                    <li>Private twin room - Sleeps 2</li>
+                                    <li>Hammock</li>
+                                    <li>Private bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">120.000 COP</h3>
+                                <span class="card__description">27.06 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/apartment.avif" alt="An illustration of a room with a queen size bed. There is an open door that leads to the rest of the apartment. It is clean and well-lit." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">APARTMENT</h3>
+                                <ul class="card__description">
+                                    <li>Private house + porch</li>
+                                    <li>Queen size bed</li>
+                                    <li>Own bathroom</li>
+                                    <li>Own kitchen</li>
+                                </ul>
+                                <h3 class="card__name card__price">250.000 COP</h3>
+                                <span class="card__description">56.37 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/dorm.avif" alt="An illustration of a well-lit and spacious room with two bunk beds. There is also a shared closet and curtains for the bottom beds." class="card__img">
+                            </div>
+                
+                            <div class="card__data">
+                                <h3 class="card__name">DORM</h3>
+                                <ul class="card__description">
+                                    <li>Bunk beds</li>
+                                    <li>4 people</li>
+                                    <li>Shared bathroom</li>
+                                    <li>Towels included</li>
+                                </ul>
+                                <h3 class="card__name card__price">65.000 COP</h3>
+                                <span class="card__description">14.66 USD</span>
+                                
+                                <a href="#cta-section" class="card__button nav-link">Book Room</a>
+                            </div>
+                            </article>
+                        </div>
+                    </div>
+        
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+        
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section id="benefits-section" class="container-fluid px-0 overflow-hidden">
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-md-5 text-center">
+                    <div class="row justify-content-start">
+                        <div class="col-10 text-start">
+                            <h3 class="lead fs-2 mb-5 fw-medium">Find comfort</h3>
+                            <p class="lead ln-base fs-4">Stay your way: private rooms, shared dorms, apartments, or campsites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid shadow rounded-5" src="assets/img/room-benefit.avif" alt="An illustration of a porch with two chairs and a wooden table. Behind the porch there is a room with a queen size bed.">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-md-4">
+                    <img class="img-fluid shadow rounded-5" src="assets/img/food-benefit.jpg" alt="An illustration of a hearty Colombian plate with fresh tomatoes, rice, tortillas, beans and some cilantro on top.">
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="row justify-content-start">
+                        <div class="col-10 text-start">
+                            <h3 class="lead fs-2 mb-5 fw-medium">Savour delicious cuisine</h3>
+                            <p class="lead ln-base fs-4">Home-cooked meals with fresh ingredients from local farms and our own plantation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-md-5 text-center">
+                    <div class="row justify-content-start">
+                        <div class="col-10 text-start">
+                            <h3 class="lead fs-2 mb-5 fw-medium">Experience Colombia</h3>
+                            <p class="lead ln-base fs-4">Private tours and pre-organised group expeditions for all skill levels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid shadow rounded-5" src="assets/img/experience-benefit.avif" alt="An illustration of a smiling young man sitting on a wooden bench in a vibrant and colourful Colombian street.">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-md-4">
+                    <img class="img-fluid shadow rounded-5" src="assets/img/activities-benefit.jpg" alt="An illustration of a hearty Colombian plate with fresh tomatoes, rice, tortillas, beans and some cilantro on top.">
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="row justify-content-start">
+                        <div class="col-10 text-start">
+                            <h3 class="lead fs-2 mb-5 fw-medium">Feel the thrill</h3>
+                            <p class="lead ln-base fs-4">Paragliding, horseback riding and mountain biking are available year-round.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials-section" class="container-fluid px-0 my-5">
+            <h4 class="text-center lead fs-1 fw-medium">What do our clients say?</h4>
+            <div id="carouselExample" class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center align-items-center gx-5">
+                            <div class="col-4 col-4 col-xl-3">
+                                <img src="assets/img/testimonials-1.avif" class="d-block w-100 img-fluid rounded-5" alt="A man with glasses smiling at the camera">
+                            </div>
+                            <div class="col-3">
+                                <figure>
+                                    <blockquote class="blockquote">
+                                      <p class="lead fs-4">"Whether you're a motorcycle enthusiast or a traveler seeking a unique escape, we're here to fuel your journey"</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mt-4 fs-5">
+                                        John Doe
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center gx-5">
+                            <div class="col-4 col-4 col-xl-3">
+                                <img src="assets/img/testimonials-2.avif" class="d-block w-100 img-fluid rounded-5" alt="A young woman smiling.">
+                            </div>
+                            <div class="col-3">
+                                <figure>
+                                    <blockquote class="blockquote">
+                                      <p class="lead fs-4">"Whether you're a motorcycle enthusiast or a traveler seeking a unique escape, we're here to fuel your journey"</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mt-4 fs-5">
+                                        John Doe
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center gx-5">
+                            <div class="col-4 col-xl-3">
+                                <img src="assets/img/testimonials-4.avif" class="d-block w-100 img-fluid rounded-5" alt="A young man wearing motorcycle gear smiling.">
+                            </div>
+                            <div class="col-3">
+                                <figure>
+                                    <blockquote class="blockquote">
+                                      <p class="lead fs-4">"Whether you're a motorcycle enthusiast or a traveler seeking a unique escape, we're here to fuel your journey"</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mt-4 fs-5">
+                                        John Doe
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h4 class="text-center lead fs-2 fw-medium">
+                We have 
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                on
+                <a href="https://maps.app.goo.gl/QBev515iNyTWQ6Gh9"><img class="img-fluid" src="assets/img/google-logo.png" alt="Google logo"></a>
+            </h4>
+        </section>
+        <section id="features-section" class="container-fluid p-5">
+            <h4 class="text-center lead fs-1 fw-medium">And there's more</h4>
+            <div class="row justify-content-center align-items-center m-5">
+                <div class="col-7">
+                    <ul class="mb-0 px-0 check-list">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead">Rent from a selection of <span class="fw-bold">adventure-ready motorcycles</span></span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead"><span class="fw-bold">Tweak your bike</span> thanks to our facilities and tools</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead">Assistance to <span class="fw-bold">ship your vehicle</span> with our trusted partners</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead">Purchase necessary <span class="fw-bold">gear</span> from leading brands</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead"><span class="fw-bold">Motorcycle training lessons</span> tailored for all riders and levels </span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                          </svg><span class="lead"><span class="fw-bold">Spanish classes</span> for beginners and advanced students</span></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid rounded-5 shadow" src="assets/img/features-1.avif" alt="A man on a large motorcycle fully equipped. He has one foot on the ground, stepping on a dirt road.">
+                </div>
+            </div>
+        </section>
+        <section id="faqs-section" class="container-fluid overflow-hidden">
+            <h4 class="text-center lead fs-1 fw-medium mb-4">FAQs</h4>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-7 border-bottom border-3 border-dark-subtle mb-3 pb-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqs1" aria-expanded="false" aria-controls="collapseQuestion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <span class="lead px-2">What's the question?</span>
+                    </button>
+                    <div class="collapse" id="collapseFaqs1">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 border-bottom border-3 border-dark-subtle mb-3 pb-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqs2" aria-expanded="false" aria-controls="collapseQuestion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <span class="lead px-2">What's the question?</span>
+                    </button>
+                    <div class="collapse" id="collapseFaqs2">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 border-bottom border-3 border-dark-subtle mb-3 pb-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqs3" aria-expanded="false" aria-controls="collapseQuestion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <span class="lead px-2">What's the question?</span>
+                    </button>
+                    <div class="collapse" id="collapseFaqs3">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 border-bottom border-3 border-dark-subtle mb-3 pb-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqs4" aria-expanded="false" aria-controls="collapseQuestion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <span class="lead px-2">What's the question?</span>
+                    </button>
+                    <div class="collapse" id="collapseFaqs4">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 border-bottom border-3 border-dark-subtle mb-3 pb-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqs5" aria-expanded="false" aria-controls="collapseQuestion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <span class="lead px-2">What's the question?</span>
+                    </button>
+                    <div class="collapse" id="collapseFaqs5">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta-section" class="container-fluid py-5 mt-5">
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button type="button" class="btn btn-primary btn-lg rounded-pill fw-bold px-4 py-3 cta-button mt-5">CONTACT TO BOOK</button>
+            </div>
+            <div class="row justify-content-center m-5 pt-5">
+                <div class="col-4 text-center">
+                    <svg class="img-fluid mb-4 cta-logo" preserveAspectRatio="xMidYMid meet" data-bbox="30 30 140 140" viewBox="30 30 140 140" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                        <g>
+                            <path d="M132.7 112c-1.7-.9-10-4.9-11.5-5.4-1.6-.5-2.6-.9-3.8.9-1.1 1.8-4.4 5.4-5.3 6.6-1 1.1-1.9 1.2-3.7.4-1.7-.9-7.2-2.6-13.6-8.2-5.1-4.4-8.4-10-9.4-11.6-1-1.7-.1-2.6.8-3.4.8-.8 1.7-1.9 2.5-3 .9-1 1.1-1.7 1.7-2.8.5-1.1.3-2.1-.2-3s-3.8-9-5.2-12.4c-1.4-3.3-2.8-2.8-3.8-2.8s-2.1-.2-3.2-.2-3 .4-4.5 2.1c-1.6 1.7-5.9 5.8-5.9 13.9 0 8.2 6 16.2 6.8 17.3.9 1.1 11.6 18.5 28.8 25.3 17.2 6.7 17.2 4.5 20.2 4.2 3.1-.3 10-4 11.4-7.9 1.4-3.9 1.4-7.3 1-7.9-.3-.9-1.4-1.3-3.1-2.1z" fill="#0dc143" data-color="1"></path>
+                            <path d="M101.2 30c-37.9 0-68.7 30.5-68.7 68.2 0 12.9 3.6 24.9 9.9 35.2L30 170l38.1-12.1c9.9 5.4 21.1 8.5 33.2 8.5 37.9 0 68.7-30.5 68.7-68.2-.1-37.7-30.9-68.2-68.8-68.2zm0 125.5c-11.7 0-22.7-3.5-31.8-9.4l-22.1 7.1 7.2-21.3c-6.9-9.4-11-21.1-11-33.6 0-31.7 25.9-57.3 57.8-57.3S159 66.7 159 98.2c0 31.6-25.9 57.3-57.8 57.3z" fill="#0dc143" data-color="1"></path>
+                        </g>
+                    </svg>
+                    <p class="lead fs-4">WhatsApp</p>
+                    <span class="fw-medium fs-3">+57 310 257 7385</span>
+                </div>
+                <div class="col-4 text-center border-end border-start border-3 border-dark-subtle">
+                    <svg class="mb-4 cta-logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                    <p class="lead fs-4">Email</p>
+                    <span class="fw-normal text-decoration-underline fs-5">donkeysunrise@gmail.com</span>
+                </div>
+                <div class="col-4 text-center">
+                    <svg class="mb-4 cta-logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                        <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                    </svg>
+                    <p class="lead fs-4">Connect</p>
+                    <div class="d-flex justify-content-center align-items-center logo-container">
+                        <img class="img-fluid" src="assets/img/youtube-logo.avif" alt="Youtube logo">                    
+                        <img class="img-fluid mx-4" src="assets/img/facebook-logo.avif" alt="Facebook logo">                    
+                        <img class="img-fluid" src="assets/img/instagram-logo.avif" alt="Instagram logo">                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid px-5 overflow-hidden">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-2 ps-5">
+                    <img class="img-fluid pb-4" src="assets/img/donkey-avif-logo.avif" alt="Donkey Sunrise logo">
+                </div>
+                <div class="col-8">
+                    <div class="row lh-lg fw-light">
+                        <div class="col-5">
+                            <a class="text-decoration-none" href="https://maps.app.goo.gl/QBev515iNyTWQ6Gh9"><p>
+                                3 # 2-75 Centro del Poblado de San Luis,<br>
+                                La Union, Valle Cauca, Colombia
+                            </p></a>
+                        </div>
+                        <div class="col-4">
+                            <p>
+                                Tel: +57 310 2577385 <br>
+                                donkeysunrise@gmail.com
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <div class="d-flex justify-content-center align-items-center logo-container ">
+                                <img class="img-fluid" src="assets/img/youtube-logo.avif" alt="Youtube logo">                    
+                                <img class="img-fluid mx-1" src="assets/img/facebook-logo.avif" alt="Facebook logo">                    
+                                <img class="img-fluid" src="assets/img/instagram-logo.avif" alt="Instagram logo">                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-5 mb-0 pt-4 fw-light text-center">© 2024 Donkey Sunrise. All rights reserved.</p>
+        </footer>
+    
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!------ Bootstrap JS ------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const OFFSET = 80; // Adjust for your fixed navbar height or padding
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const targetId = link.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - OFFSET;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth',
+                    });
+                }
+            });
+        });
+    });
+
+    </script>
+    </body>
+</html>
